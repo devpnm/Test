@@ -11,7 +11,13 @@ import SwiftUI
 struct TestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ScrumsView(scrums: DailyScrum.sampleData)
+//            TabView {
+//                MeetingView()
+//                    .tabItem {
+//                        Label("Journal", systemImage: "book")
+//                    }
+//            }
         }
     }
 }
